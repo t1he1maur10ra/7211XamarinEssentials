@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ResearchApplication.MainPage">
+
+    <StackLayout>
+        <StackLayout>
+            <!-- Place new controls here -->
+            <Label Text="Xamarin essentials email" 
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand" />
+            <Entry Text="" Placeholder="Email Address" x:Name="EmailAddress"/>
+            <Entry Text="" Placeholder="Subject" x:Name="EmailSubject"/>
+            <Entry Text="" Placeholder="Enter your message here..." x:Name="EmailMsg"/>
+            <Button Text="Submit" Clicked="Button_Clicked"/>
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="Xamarin essentials Geolocation" 
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand" />
+            <Label Text="Latitude" x:Name="GeoLat"/>
+            <Label Text="Longitude" x:Name="GeoLong"/>
+            <Label Text="Altitude" x:Name="GeoAlt"/>
+            <Button Text="Get last known coordinates" Clicked="Button_Clicked_1"/>
+        </StackLayout>
+
+    </StackLayout>
+
+    
+</ContentPage>
